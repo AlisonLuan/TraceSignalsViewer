@@ -1,0 +1,13 @@
+FormatVersion=6.0 // Do not edit this line!
+Title="example.dbc"
+
+[ExampleMessage1]
+ID=064h
+Len=8
+Var=Speed unsigned 0,8 -m /f:0.1 /o:0 /max:250
+Var=RPM unsigned 8,16 -m /f:1 /o:0 /max:8000
+[ExampleMessage2]
+ID=0C8h
+Len=4
+Var=Temperature unsigned 0,8 -m /f:1 /o:0 /max:215
+Var=Voltage unsigned 8,16 -m /f:0.01 /o:0 /max:65.535
