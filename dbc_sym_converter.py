@@ -24,7 +24,7 @@ def convert_dbc_to_sym(dbc_path, sym_path):
                 unit = signal.unit if signal.unit else ""
                 unit = unit.replace("\"", "\"\"")  # Escape quotes
                 sym_file.write(
-                    f"Var={signal.name} unsigned {signal.length} -m /f:{signal.scale} /o:{signal.offset} /max:{max_value}\n"
+                    f"Var={signal.name} unsigned {signal.start},{signal.length} -m /f:{signal.scale} /o:{signal.offset} /max:{max_value}\n"
                 )
 
     print(f"SYM file created at: {sym_path}")
